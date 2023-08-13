@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+/* Start Global Style */
+:root {
+    --light-color: #fff;
+    --main-color: hwb(39 0% 0%);
+    --secondary-color: #1b1d5a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    direction: rtl;
+    font-family: 'Tajawal', sans-serif;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+}
+
+
+/* End Global Style */
+/* Start Header Style */
+/* ---------------START OUR-SERVICE STYLE--------------- */
+header {
+    position: relative;
+}
+
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(308deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+
+.logo-img {
+    position: absolute;
+    top: 40px;
+    left: 104px;
+    z-index: 6;
+}
+
+.logo-img img {
+    width: 150px;
+}
+
+.carousel-inner {
+    height: 100vh;
+}
+
+.carousel-item>img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: var(--light-color) !important;
+}
+
+.carousel-indicators .active {
+    opacity: 1 !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none !important;
+}
+
+.carousel-caption {
+    bottom: 50% !important;
+    width: 55%;
+    transform: translateY(50%);
+    text-align: right;
+    z-index: 5;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    border: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 50%;
+
+}
+
+.carousel-indicators {
+    position: static !important;
+    margin: 0 !important;
+}
+
+.indicator-btns {
+    position: absolute;
+    right: 15%;
+    z-index: 7;
+    bottom: 10%;
+
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    width: fit-content;
+    color: var(--light-color);
+    text-align: right;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.carousel-caption h5 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.carousel-caption p {
+    margin-top: 18px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* End Header Style */
+
+/* Start Rescue And Protection Devices Style*/
+.protection-devices {
+    margin-bottom: 50px;
+}
+
+.protection-devices-heading h2 {
+    color: #21B6DD;
+    line-height: 48px;
+    font-size: 30px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.protection-devices-heading p {
+    color: #102B42;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    display: inline-block;
+}
+
+.protection-devices-content ul {
+    padding-right: 36px;
+}
+
+.protection-devices-content ul li {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    color: #102B42;
+}
+
+/* End Rescue And Protection Devices  Style*/
+
+/* Start Fire Extinguishing And Alarm Devices Style*/
+
+.extinguishing-alarm-devices h2 {
+    color: #21B6DD;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+
+}
+
+.icon {
+    background: #F2F2F2;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.extinguishing-alarm-devices .content h3 {
+    color: #102B42;
+    text-align: right;
+    font-size: 20px;
+
+}
+
+.extinguishing-alarm-devices .content p {
+    color: #C6C6C6;
+    text-align: right;
+    font-size: 17px;
+
+}
+
+/*End Fire Extinguishing And Alarm Devices Style */
+
+/* Start Gas Detectors Style */
+.gas-detectors {
+    background-image: url("../images/banner-2.svg");
+    width: 100%;
+    background-size: cover;
+}
+
+.gas-detectors .content {
+    background: linear-gradient(267deg, rgba(0, 0, 0, 0.50) 0%, rgba(16, 43, 66, 0.00) 100%);
+    width: 1037px;
+    height: 586px;
+    padding-top: 90px;
+    padding-right: 90px;
+}
+
+.gas-detectors .content h2 {
+    color: #FFF;
+    text-align: right;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.gas-detectors .content ul li {
+    list-style-position: inside;
+    color: #FFF;
+    text-align: right;
+    font-size: 20px;
+
+    letter-spacing: 2.8px;
+    margin-bottom: 5px;
+}
+
+/* End Start Gas Detectors Style*/
+
+/* Start Lifting Equipment And Supplies */
+.lifting-equipment h2 {
+    color: #21B6DD;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.lifting-equipment .desc p {
+    color: #102B42;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+/* End Lifting Equipment And Supplies */
+
+
+/* Start Marine Electronics */
+.marine-electronics {
+    position: relative;
+    overflow-x: clip;
+}
+
+.marine-electronics .content h2 {
+    color: #21B6DD;
+    text-align: right;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.marine-electronics .content ul li {
+    color: #102B42;
+    text-align: right;
+    font-size: 20px;
+
+    margin-bottom: 12px
+}
+
+.marine-electronics .image img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+    left: -150px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+/* End Marine Electronics */
+/* Start Other Service Section */
+.other-service {
+    background: #F8F8F8;
+    ;
+
+}
+
+.other-service h2 {
+    color: #21B6DD;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.service {
+    background: #FFF;
+    border-right: 5px solid #102B42;
+}
+
+.service p {
+    color: #102B42;
+    text-align: right;
+    font-size: 20px;
+    padding: 15px;
+
+}
+
+/* End Other Service Section*/
+/*Start Contact-us Section Style */
+.contact-us-container {
+    border-radius: 50px;
+    background-color: #F8F8F8;
+}
+
+.contact-us-container .content {
+    padding: 10px;
+}
+
+.contact-us-container .image {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-us .adress h2,
+.contact-us .mobile-contacts h2 {
+    color: #102B42;
+    text-align: right;
+    font-size: 20px;
+
+}
+
+.contact-us .adress p {
+    color: #102B42;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.mobile-contacts div p {
+    color: #102B42;
+    text-align: right;
+    font-size: 17px;
+
+}
+
+/* End Contact-us Section Style*/
+
+/* Start Footer Style  */
+footer {
+    background: #102B42;
+    color: #fff;
+    position: relative;
+    padding: 30px 0;
+}
+
+.social-info p {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.social-icon {
+    background: rgba(33, 182, 221, 0.91);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.shape-img {
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+    width: 400px;
+}
+
+/* End Footer Style  */
+
+/* Small devices (landscape phones, 576px and up) */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 1200px) {
+    .carousel-caption h5 {
+        font-size: 30px;
+    }
+
+    .carousel-caption p {
+        font-size: 22px;
+    }
+
+    .gas-detectors .content {
+        width: 800px;
+
+    }
+
+    .logo-img {
+        left: 90px;
+    }
+
+    .logo-img img {
+        width: 140px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .carousel-caption {
+        width: 100%;
+        right: 0% !important;
+        padding: 20px;
+    }
+
+    .carousel-caption h5,
+    .carousel-caption p {
+        width: 100%;
+        color: var(--light-color);
+        text-align: center;
+
+    }
+
+    .carousel-caption p {
+        font-size: 20px;
+    }
+
+    .logo-img img {
+        width: 135px;
+    }
+
+    .gas-detectors .content {
+        width: 600px;
+    }
+
+    .gas-detectors .content ul li {
+        font-size: 19px;
+    }
+
+    .marine-electronics .image img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .logo-img {
+        left: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 26px;
+    }
+
+    .carousel-caption p {
+        font-size: 19px;
+    }
+
+    .logo-img img {
+        width: 120px;
+    }
+
+    .gas-detectors .content {
+        width: 500px;
+
+    }
+
+    .gas-detectors .content ul li {
+        font-size: 18px;
+    }
+
+    .marine-electronics .image img {
+        display: none;
+    }
+
+    .logo-img {
+        left: 70px;
+    }
+
+    .gas-detectors .content {
+        padding-right: 60px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .logo-img img {
+        width: 125px;
+    }
+
+    .gas-detectors .content {
+        width: 400px;
+
+    }
+
+    .gas-detectors .content ul li {
+        font-size: 16px;
+    }
+
+    .carousel-caption p {
+        font-size: 19px;
+    }
+
+    .logo-img {
+        left: 55px;
+        top: 35px;
+    }
+
+    .gas-detectors .content {
+        padding-right: 50px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .gas-detectors .content {
+        padding-right: 40px;
+        width: 90%;
+    }
+
+    .carousel-caption p {
+        font-size: 19px;
+    }
+
+    .logo-img {
+        left: 20px;
+        top: 20px;
+    }
+
+    .logo-img img {
+        width: 100px;
+    }
+
+    .extinguishing-alarm-devices .content h3 {
+        text-align: center;
+    }
+
+    .social-icon {
+        font-size: 15px;
+    }
+}
